@@ -1,0 +1,127 @@
+:root {
+    --header-height: 90px;
+    --navbarleft-width-mobile: 3rem;
+    --navbarleft-width: 10rem;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    height: calc(100% - var(--header-height));
+    display: flex;
+}
+
+.my_w_0 {
+    width: 0;
+}
+
+.my_w_15 {
+    width: 15%;
+}
+
+.my_w_10 {
+    width: 10%;
+}
+
+.my_w_auto {
+    width: auto;
+}
+
+header {
+    background-color: #F8F9FA;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+}
+
+.my_control_background {
+    background-color: #E5E5E5;
+}
+
+.fa-bell {
+    color: #FF8F00;
+}
+
+.my_logo {
+    max-width: 3rem;
+}
+
+.new{
+    display: flex;
+    align-items: center;
+}
+
+.rep{
+    text-decoration: none;
+}
+
+main #left_nav {
+    background: #051E34;
+    height: 100%;
+    width: var(--navbarleft-width);
+    background-image: url(../img/sidebar-bg.png);
+    color: white;
+}
+
+.fa-house{
+    font-size: 20px;
+}
+
+main #center_content {
+    height: 100%;
+    width: calc(100% - var(--navbarleft-width));
+    overflow: auto;
+}
+
+#my_blue_section {
+    background-color: #1B72E8;
+    color: white;
+}
+
+.my_badge_bg {
+    background-color: #165BBA;
+}
+
+.fa-plus {
+    font-size: 20px;
+}
+
+.my_botton_canvas {
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.my_list_font {
+    font-size: 0.8rem;
+}
+
+li img {
+    width: 100%;
+    max-width: 30px;
+}
+
+#my_white_section button {
+
+   padding: 0.15rem 0.45rem;
+}
+
+.my_botton_canvas:hover {
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width:767px) {
+
+    main #left_nav {
+        width: var(--navbarleft-width-mobile);
+    }
+
+    main #center_content {
+        width: calc(100% - var(--navbarleft-width-mobile));
+    }
+}
